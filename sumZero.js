@@ -1,12 +1,10 @@
-
-
 function sumZero(arr){
-    for (i of arr) {
-      console.log(i)
-    } 
-      if (i + i === 0) {
+  for (i of arr) {
+    for (j of arr){
+      if(arr[i] + arr[j] === 0) {
         return true
-      } else {
-        return false 
       }
-  }
+    }
+  } 
+}
+
